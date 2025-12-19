@@ -32,6 +32,10 @@ public class BillsData {
    static public List<Bill> getBillsBySeller(String seller){
        return bills.stream().filter(bill -> bill.getSeller().equals(seller)).toList();
    }
+   
+   static public List<Bill> getBillsByDate(String date){
+       return bills.stream().filter(bill -> bill.getDate().split(" ")[0].equals(date)).toList();
+   }
    static public List<Bill> getBillsBySellerAndDate(String seller, String date){
        return bills.stream().filter(bill -> (bill.getSeller().equals(seller) && bill.getDate().split(" ")[0].equals(date))).toList();
    }

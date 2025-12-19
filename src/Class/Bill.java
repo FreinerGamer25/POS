@@ -1,10 +1,9 @@
-
 package Class;
 
 import java.util.List;
 
-
 public class Bill {
+
     private String buyer;
     private String ccBuyer;
     private String emailBuyer;
@@ -88,5 +87,5 @@ public class Bill {
     public void setId(String id) {
         this.id = id;
     }
-    
+
 }
